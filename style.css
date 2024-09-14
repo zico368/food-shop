@@ -30,6 +30,7 @@
 .header{
     margin-top: 0px;
  }
+
 .cart{
     margin-left: 1%;
     background-color: white;
@@ -52,11 +53,14 @@
     color: hsl(14, 86%, 42%);
     margin-left: 20px;
 }
+.food-info{
+    display: flex;
+    flex-direction: column;
+}
 .content{
     display: flex;
     flex-wrap: wrap;  
     width: 800px;
-    /* margin: 0px; */
     column-gap: 10px;
     row-gap: 20px;  
 
@@ -112,13 +116,92 @@ p{
 
 
 
-@media  (max-width: 430px){
 
-    .base{
-        margin-left: 20px;
-       
+@media  (max-width: 430px){
+    .order{
+        flex-direction: column;
+        /* align-items: center;  */
+        margin-left: 5%;       
+    }
+    .food-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        /* align-items: center;     */
+    }
+    .content{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: auto;
+        align-items: center;
+           
+    }
+    .size{
+        width: 95%;
+        border-radius: 5px;
         
+    } 
+    .cart{
         
+        background-color: white;
+        height: 200px;
+        width: 95%;   
+        
+    }
+    .button{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .cart-text{
+        font-weight: bold;
+    }
+    .cart-color{
+        color: hsl(14, 86%, 42%);
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .item{
+        text-align: center;
+        font-size: x-small;
+        font-weight: bold;
+    }
+    .cake{
+        
+        width: 30%;
+        margin-left: 35%;
+        
+    }
+    
+
+    /* .order{    
+        flex-direction: column;   
+        align-items: center;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;    
+    }
+     .food-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+          
+     }
+     .size{
+        width: 250px;
+        border-radius: 5px;
+    } */
+     /* .size{
+        width: 100%;
+        border-radius: 5px;
+    } */
+
+    /* .base{
+           
     }
 
     .size{ 
@@ -126,13 +209,11 @@ p{
         height: 150px;
 
     }
-    .content{
+    .food-info{
         display: flex;
         flex-direction: column;
     }
-    .order{
-        flex-direction: column;
-    }
+   
     .cart{
         height: 150px;
         width: 180px;  
@@ -160,5 +241,5 @@ p{
     }
     .button{
         margin-left: 100px;
-    }
+    } */
 }
